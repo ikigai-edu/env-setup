@@ -1,0 +1,19 @@
+#To install jupyter extension
+pip install jupyter_contrib_nbextensions
+
+jupyter contrib nbextension install --user
+
+jupyter nbextension enable varInspector/main
+
+#To create new conda env
+conda create -n ml_env python=3.9
+
+#To install ipykernel
+conda activate ml_env
+
+conda install ipykernel
+
+python -m ipykernel install --user --name ml_env --display-name "ml_env"
+
+
+
